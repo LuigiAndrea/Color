@@ -7,12 +7,12 @@ namespace Tests
 {
     public class Tests
     {
-        [TheoryAttribute]
-        [InlineDataAttribute("Ciao",ConsoleColor.Red)]
-        public void WriteColor(String a,ConsoleColor b) 
+        [Fact]
+        public void WriteColor()
         {
-            WriteLineWithColor(a,b);
-            Assert.True(ForegroundColor.ToString().Equals(ConsoleColor.Gray.ToString()));    
+            WriteLineWithColor(String.Empty, ConsoleColor.Red,ConsoleColor.DarkYellow);
+            Assert.True(ForegroundColor == ConsoleColor.Gray);
+            Assert.True(BackgroundColor == ConsoleColor.Black);
         }
     }
 }
