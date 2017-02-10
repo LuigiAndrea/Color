@@ -21,5 +21,17 @@ namespace Color
             Write(text);
             Console.ResetColor();
         }
+
+        public static void ChangeDefaultColor(ConsoleColor foreground, ConsoleColor? background = ConsoleColor.Black)
+        {
+            ForegroundColor = foreground;
+            BackgroundColor = (ConsoleColor)background;
+        }
+
+        public static void ResetDefaultColor()
+        {
+            Console.ResetColor();
+            for (int i = 0; i < Console.BufferHeight; i++) Console.Write(String.Empty);
+        }
     }
 }

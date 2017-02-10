@@ -2,17 +2,28 @@
 using static System.Console;
 using System;
 using Xunit;
+using System.IO;
 
 namespace Tests
 {
-    public class Tests
+    public class TestsColorFeatures
     {
         [Fact]
-        public void WriteColor()
+        public void WriteColorTest()
         {
-            WriteLineWithColor(String.Empty, ConsoleColor.Red,ConsoleColor.DarkYellow);
-            Assert.True(ForegroundColor == ConsoleColor.Gray);
-            Assert.True(BackgroundColor == ConsoleColor.Black);
+
+        }
+
+        [Fact]
+        public void ChangeDefaultColorTest()
+        {
+
+        }
+
+        [Fact]
+        public void ResetDefaultColorTest()
+        {
+
         }
     }
 }
