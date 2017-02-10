@@ -7,8 +7,9 @@ namespace ColorApplication
     {
         public static void Main(string[] args)
         {
-            WriteLineWithColor("Ciao", ConsoleColor.Red);
-            WriteWithColor("Luigi", ConsoleColor.Yellow);
+            WriteWithColor("Ciao ", ConsoleColor.Red);
+            WriteLineWithColor("Luigi", ConsoleColor.Yellow, ConsoleColor.Blue);
+            WriteWithColor("...", ConsoleColor.Red);
         }
     }
 }
