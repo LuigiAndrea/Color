@@ -26,6 +26,8 @@ namespace Color
         {
             ForegroundColor = foreground;
             BackgroundColor = (ConsoleColor)background;
+            ColorStatus.ColorForeground = foreground;
+            ColorStatus.ColorBackground = (ConsoleColor)background;
         }
 
         public static void ResetDefaultColor()
@@ -33,5 +35,13 @@ namespace Color
             Console.ResetColor();
             for (int i = 0; i < Console.BufferHeight; i++) Console.Write(String.Empty);
         }
+
+        public static class ColorStatus
+        {
+            public static ConsoleColor ColorForeground ;
+            public static ConsoleColor ColorBackground;
+        }
     }
+
+
 }

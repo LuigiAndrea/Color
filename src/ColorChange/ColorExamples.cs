@@ -4,7 +4,7 @@ using System;
 
 namespace ColorApplication
 {
-    public class Program
+    public class ColorExample
     {
         public static void Main(string[] args)
         {
@@ -12,9 +12,8 @@ namespace ColorApplication
             WriteLineWithColor("Luigi", ConsoleColor.Yellow, ConsoleColor.Blue);
             ChangeDefaultColor(ConsoleColor.Green,ConsoleColor.DarkRed);
             WriteLine("Test");
-            WriteLine(ForegroundColor);
             ResetDefaultColor();
-            WriteLine("Testf");
+            WriteLine("Test After Reset");
         }
     }
 }
