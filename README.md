@@ -1,4 +1,6 @@
-[![Build Status](https://travis-ci.org/LuigiAndrea/Color.png?branch=master)](https://travis-ci.org/LuigiAndrea/Color.png?branch=master)
+| Linux/OSX | Windows |
+| --- | --- |
+| [![Build Status](https://travis-ci.org/LuigiAndrea/Color.png?branch=master)](https://travis-ci.org/LuigiAndrea/Color) | [![Build status](https://ci.appveyor.com/api/projects/status/lvchbm52b07qbodc/branch/master?svg=true)](https://ci.appveyor.com/project/LuigiAndrea/color) |
 
 Color
 ===
