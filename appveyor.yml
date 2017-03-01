@@ -3,7 +3,8 @@ os: Visual Studio 2015
 build_script:
   - ps: dotnet restore
   - ps: dotnet build src/ColorChange
-  - ps: dotnet run src/ColorChange
+  - ps: cd src/ColorChange
+  - ps: dotnet run
 
 test: off 
 version: "{build}"
