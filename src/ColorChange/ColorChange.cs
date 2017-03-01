@@ -10,16 +10,21 @@ namespace Color
             BackgroundColor = (ConsoleColor)background;
             ForegroundColor = (ConsoleColor)color;
             Write(text);
-            Console.ResetColor();
+            ResetColor();
             WriteLine();
         }
 
+        // public static void WriteLineWithColor(string[] text, string[] colors, ConsoleColor? background = ConsoleColor.Black)
+        // {
+        //     ;
+        // }
+        
         public static void WriteWithColor(string text, ConsoleColor? color = ConsoleColor.White, ConsoleColor? background = ConsoleColor.Black)
         {
             BackgroundColor = (ConsoleColor)background;
             ForegroundColor = (ConsoleColor)color;
             Write(text);
-            Console.ResetColor();
+            ResetColor();
         }
 
         public static void ChangeDefaultColor(ConsoleColor foreground, ConsoleColor? background = ConsoleColor.Black)
