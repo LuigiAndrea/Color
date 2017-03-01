@@ -13,11 +13,6 @@ namespace Color
             ResetColor();
             WriteLine();
         }
-
-        // public static void WriteLineWithColor(string[] text, string[] colors, ConsoleColor? background = ConsoleColor.Black)
-        // {
-        //     ;
-        // }
         
         public static void WriteWithColor(string text, ConsoleColor? color = ConsoleColor.White, ConsoleColor? background = ConsoleColor.Black)
         {

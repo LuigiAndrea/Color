@@ -11,7 +11,6 @@ fi
 
 dotnet restore
 dotnet build src/ColorChange
-dotnet run src/ColorChange
 
 revision=${TRAVIS_JOB_ID:=1}  
 revision=$(printf "%04d" $revision) 
