@@ -1,4 +1,4 @@
-using static System.Console;
+﻿using static System.Console;
 using System;
 
 namespace Color
@@ -37,3 +37,4 @@ namespace Color
 
     }
 }
+
