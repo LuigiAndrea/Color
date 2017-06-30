@@ -9,8 +9,10 @@ if [ -d $artifactsFolder ]; then
   rm -R $artifactsFolder
 fi
 
-dotnet restore
-dotnet build src/ColorChange
+dotnet restore ./color-example
+dotnet restore ./color-change
+dotnet build ./color-example
+dotnet build ./color-change
 
 revision=${TRAVIS_JOB_ID:=1}  
 revision=$(printf "%04d" $revision) 

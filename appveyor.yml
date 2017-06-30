@@ -1,8 +1,7 @@
-os: Visual Studio 2015
-
+os: Visual Studio 2017
 build_script:
-  - ps: dotnet restore
-  - ps: dotnet build src/ColorChange
+  - ps: sl -Path ./color-example; dotnet restore; dotnet build
+  - ps: sl -Path ../color-change; dotnet restore; dotnet build
 
 test: off 
 version: "{build}"
