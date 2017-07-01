@@ -2,6 +2,12 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard1.4</TargetFramework>
+    <Authors>Luigi Andrea D'Aversa</Authors>
+    <Description>Light Light Utility to change the Foreground and Background color of a console app</Description>
+    <RepositoryUrl>https://github.com/LuigiAndrea/Color</RepositoryUrl>
+    <PackageVersion>1.0.0</PackageVersion>
+    <PackageLicenseUrl>https://raw.githubusercontent.com/LuigiAndrea/Color/master/LICENSE</PackageLicenseUrl>
+    <PackageTags>console-application writeline foreground background color-text color csharp dotnetcore </PackageTags>
   </PropertyGroup>
 
 </Project>
